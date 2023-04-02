@@ -64,18 +64,12 @@ x = []
 y = []
 
 for i in range(100):
-    h = randint(0, 10)
+    h = randint(0, 9)
     x.append(pocht_cod(h))
     y.append(h % 2)
 
-
-
 x = np.array(x)
 y = np.array(y)
-
-
-
-
 
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size = 1.0 - LEARNING_SAMPLE_SIZE/TOTAL_COUNT, random_state=42)
 
